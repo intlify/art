@@ -1,0 +1,30 @@
+{
+  "name": "art",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Intlify artworks",
+  "scripts": {
+    "png": "npm-run-all --parallel png:*",
+    "png:logo_landscape": "convert-svg-to-png --width 1610 ./logo_landscape.svg",
+    "png:logo_landscape_negative": "convert-svg-to-png --width 1610 ./logo_landscape_negative.svg",
+    "png:logo_portrait": "convert-svg-to-png --width 1080 ./logo_portrait.svg",
+    "png:logo_portrait_negative": "convert-svg-to-png --width 1080 ./logo_portrait_negative.svg",
+    "png:logo_symbol": "convert-svg-to-png --width 640 ./logo_symbol.svg",
+    "png:logo_symbol_negative": "convert-svg-to-png --width 640 ./logo_symbol_negative.svg",
+    "png:logo_type": "convert-svg-to-png --width 1610 ./logo_type.svg",
+    "png:logo_type_negative": "convert-svg-to-png --width 1610 ./logo_type_negative.svg"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/intlify/art.git"
+  },
+  "license": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License",
+  "bugs": {
+    "url": "https://github.com/intlify/art/issues"
+  },
+  "homepage": "https://github.com/intlify/art#readme",
+  "devDependencies": {
+    "convert-svg-to-png": "^0.5.0",
+    "npm-run-all": "^4.1.5"
+  }
+}

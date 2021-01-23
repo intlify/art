@@ -4,3 +4,4 @@
 *.log
 *.swp
 *~
+node_modules
